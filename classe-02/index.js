@@ -22,4 +22,11 @@ const alunos = [
         roupaDeDormir: "só cueca"
     }
 ];
+const alunosResumido = [];
 
+for (i = 0; i < alunos.length; i++) {
+    const { nome, idade, email, curso } = alunos[i];
+    alunosResumido[i] = { nome: nome, idade: idade, email: email, curso: curso };
+}
+
+console.log(alunosResumido);
